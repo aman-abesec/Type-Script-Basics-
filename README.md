@@ -53,3 +53,31 @@ function error(msg : string):never{
 }
   ```
 </details>
+
+
+<details>
+<summary>Objects</summary>
+<br>
+  
+```ts
+const User ={
+    name:'Aman',
+    email:'xyz@gmail.com',
+    isActive:true
+}
+
+function createUser({name: string,ispaid:boolean}){
+
+}
+createUser({name: 'Aman', ispaid:false})
+
+function createCource():{name:string, price:number}{
+    return {name:'B.tech', price:670}
+}
+
+//Odd Beavaiour
+// createUser accept two object but three was given inside object
+let obj={name:'Aman', ispaid:false,email:'xyyy@gmail.com'}
+createUser(obj);
+```
+</details>
