@@ -152,3 +152,47 @@ let rgba: number[][] = [[0,0,0],[9,89,90]]
 
 ```
 </details>
+
+<details>
+<summary>Unions</summary>
+<br>
+
+```ts
+let score : number | string = 56
+score='7878'
+score=88
+
+
+function convertUpperCase ( str : string | number) : string{
+    if (typeof str === 'string'){
+        return str.toUpperCase()
+    }else{
+        return String(str).toUpperCase()
+    }
+}
+console.log(convertUpperCase(67687))
+console.log(convertUpperCase('ghgxg'))
+
+
+let d : number[] = [1,2,3,4]
+let d2 : string[] =['1','2','3']
+let d3 : string [] | number []=[1,2,3] //It will be all number or all string
+let d4 : (string  | number) []=[1,2,'3']
+
+
+let direction : 'up' | 'down' | 'left' | 'right'
+direction = "up"
+console.log(direction)
+```
+</details>
+
+<details>
+<summary>Tuples</summary>
+<br>
+
+```ts
+let user : [string,number,boolean]
+user=['Aman',18,true]
+//NOTE : Vlaues can change user[0]='Akash', you can apply push function without error 
+```
+</details>
