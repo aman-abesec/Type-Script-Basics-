@@ -98,3 +98,57 @@ function createUser(user : User) : void{
 }
 ```
 </details>
+
+<details>
+<summary>Read Only and Optional</summary>
+<br>
+
+```ts
+type dbSchema = {
+    readonly _id : number,
+    firstName: string,
+    lastName: string,
+    mobNumber : number,
+    isSuperAdmin ?: boolean //Here questmark telling its optional
+}
+
+let firstData:dbSchema = {_id:1234,firstName:'Aman',lastName:'Singh',mobNumber:89887668,isSuperAdmin:true}
+let secondData:dbSchema = {_id:1235,firstName:'Akash',lastName:'Singh',mobNumber:8787887668}
+console.log(firstData._id)
+
+type cardNumber = {
+    cardNumber : number
+}
+
+type cardDate = {
+    cardDate : string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv : number
+}
+
+let amCDetails : cardDetails = {cardDate : '12-01-2009',cardNumber:6787878,cvv:787}
+console.log(amCDetails)
+```
+</details>
+
+<details>
+<summary>Array</summary>
+<br>
+
+```ts
+const fruits : string[] = ['apple','mango','banana']
+const num : Array<number> = [1,2,3,4,5]
+
+type Point = {
+    x:number,
+    y:number
+}
+
+let allPoints : Point[] =[{x:9,y:89}]
+
+let rgba: number[][] = [[0,0,0],[9,89,90]]
+
+```
+</details>
