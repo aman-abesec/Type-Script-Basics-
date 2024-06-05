@@ -81,3 +81,20 @@ let obj={name:'Aman', ispaid:false,email:'xyyy@gmail.com'}
 createUser(obj);
 ```
 </details>
+
+<details>
+<summary>Aliases</summary>
+<br>
+
+```ts
+type User={
+    name:string;
+    email:string;
+    isActive:boolean;
+}
+
+function createUser(user : User) : void{
+    console.log(user.name)
+}
+```
+</details>
