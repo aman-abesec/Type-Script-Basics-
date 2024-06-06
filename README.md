@@ -216,5 +216,6 @@ enum NumberChoice {
 }
 
 const seat = SeatChoice.LOWER
+//NOTE : Also you can assign string
 ```
 </details>
