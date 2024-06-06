@@ -219,3 +219,41 @@ const seat = SeatChoice.LOWER
 //NOTE : Also you can assign string
 ```
 </details>
+
+
+<details>
+<summary>Interfaces</summary>
+<br>
+
+```ts
+interface User {
+    readonly dbId : number,
+    email : string,
+    userId: number,
+    googleId?: string,
+    startTrail : ()=> string,
+    simpleFun?(): string,
+    getCoupon(deal : number) : number
+}
+
+//REopening the interface
+interface User{
+    githubToken : string
+}
+
+
+interface Admin extends User{
+    role : 'admin' | 'it' | 'tl'
+}
+
+let aman : User = {email:'namma@gmail.com',userId:6766876, dbId:22,
+startTrail:()=>{
+    return 'Trail Return';
+},
+getCoupon:(deal:10)=>{
+    return deal
+},
+githubToken:'uguyf787t8cyf78'
+}
+```
+</details>
