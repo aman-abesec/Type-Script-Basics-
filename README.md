@@ -196,3 +196,25 @@ user=['Aman',18,true]
 //NOTE : Vlaues can change user[0]='Akash', you can apply push function without error 
 ```
 </details>
+
+
+<details>
+<summary>Enum</summary>
+<br>
+
+```ts
+enum SeatChoice {
+    UPPER,
+    MIDDLE,
+    LOWER
+}
+
+enum NumberChoice {
+    ONE = 1,
+    TWO,
+    THREE
+}
+
+const seat = SeatChoice.LOWER
+```
+</details>
