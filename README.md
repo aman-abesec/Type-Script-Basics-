@@ -1,4 +1,4 @@
-# Type-Script-Basics
+# Type Script Basics
 
 
 <details>
