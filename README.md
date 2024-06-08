@@ -243,7 +243,7 @@ interface User{
 
 
 interface Admin extends User{
-    role : 'admin' | 'it' | 'tl'
+    role : 'admin' | 'it' | 'tl' | 'hr'
 }
 
 let aman : User = {email:'namma@gmail.com',userId:6766876, dbId:22,
