@@ -252,8 +252,7 @@ startTrail:()=>{
 },
 getCoupon:(deal:10)=>{
     return deal
-},
-githubToken:'uguyf787t8cyf78'
+}
 }
 ```
 </details>
